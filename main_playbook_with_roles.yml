@@ -1,0 +1,8 @@
+---
+- name: Complex Data Processing
+  hosts: localhost
+  connection: local
+
+  roles:
+    - generate_raw_data
+    - process_data

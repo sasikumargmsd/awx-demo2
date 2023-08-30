@@ -1,0 +1,4 @@
+---
+- name: Notify Admin
+  ansible.builtin.debug:
+    msg: "success"

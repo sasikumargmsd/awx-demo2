@@ -1,0 +1,100 @@
+---
+  - name: Generate Raw Data
+    set_fact:
+      raw_data:
+        - name: John Doe
+          age: 30
+          department: HR
+          experience: 5
+        - name: Jane Smith
+          age: 25
+          department: IT
+          experience: 3
+        - name: Michael Johnson
+          age: 35
+          department: Finance
+          experience: 8
+        - name: Sarah Williams
+          age: 28
+          department: Marketing
+          experience: 6
+        - name: Robert Brown
+          age: 42
+          department: Operations
+          experience: 15
+        - name: Alice Turner
+          age: 29
+          department: IT
+          experience: 7
+        - name: David Lee
+          age: 31
+          department: Sales
+          experience: 9
+        - name: Emily Johnson
+          age: 27
+          department: Marketing
+          experience: 4
+        - name: Richard Clark
+          age: 37
+          department: Finance
+          experience: 12
+        - name: Jessica White
+          age: 33
+          department: Operations
+          experience: 10
+        - name: Brian Wilson
+          age: 29
+          department: HR
+          experience: 6
+        - name: Amanda Scott
+          age: 24
+          department: Marketing
+          experience: 2
+        - name: Christopher Taylor
+          age: 38
+          department: IT
+          experience: 11
+        - name: Melissa Martinez
+          age: 26
+          department: Finance
+          experience: 5
+        - name: Daniel Johnson
+          age: 31
+          department: Sales
+          experience: 8
+        - name: Samantha Harris
+          age: 27
+          department: Operations
+          experience: 7
+        - name: Kevin Thompson
+          age: 34
+          department: HR
+          experience: 9
+        - name: Nicole Davis
+          age: 29
+          department: Marketing
+          experience: 6
+        - name: Matthew Wilson
+          age: 40
+          department: IT
+          experience: 12
+        - name: Jennifer Adams
+          age: 26
+          department: Finance
+          experience: 4
+        - name: William Martin
+          age: 32
+          department: Sales
+          experience: 10
+        - name: Elizabeth Thomas
+          age: 28
+          department: Operations
+          experience: 5
+        - name: Jason Robinson
+          age: 35
+          department: HR
+          experience: 11
+        - name: Laura Miller
+          age: 27
+          department: Marketing
+          experience: 3

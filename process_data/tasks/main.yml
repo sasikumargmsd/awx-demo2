@@ -1,0 +1,39 @@
+---
+- name: Display Raw Data
+  debug:
+    var: raw_data
+
+- name: Filter Senior Employees
+  set_fact:
+    senior_employees: "{{ raw_data | selectattr('experience', '>=', 5) | list }}"
+
+- name: Display Senior Employees
+  debug:
+    var: senior_employees
+
+- name: Calculate Average Age
+  set_fact:
+    avg_age: "{{ (raw_data | map(attribute='age') | map('int') | sum) / raw_data | length | round(2) }}"
+
+- name: Display Average Age
+  debug:
+    var: avg_age
+
+- name: Execute Custom Python Filter
+  debug:
+    msg: "{{ raw_data |  custom_filter }}"
+  register: filtered_data
+
+- name: Display Filtered Data
+  debug:
+    var: filtered_data
+
+- name: Export filtered data to file
+  debug:
+    msg: "{{ filtered_data | export_filtered_data }}"
+
+- name: Notify Admin
+  ansible.builtin.debug:
+    msg: "success"  
+
+
